@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bold Growth - Bring Nature Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav-fixed" id="navbar">
+    <div class="nav-logo">
+      <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+        <path d="M12 6v12M8 10c0-2 2-4 4-4s4 2 4 4"/>
+      </svg>
+      <span>Bold Growth</span>
+    </div>
+    <div class="nav-links">
+      <a href="#products">Shop</a>
+      <a href="#lifestyle">Lookbook</a>
+      <a href="#feature">Care</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section id="hero" class="section-hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.jpg" alt="Liquid glass botanical background">
+      <div class="hero-gradient-left"></div>
+      <div class="hero-gradient-bottom"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="word">BRING</span>
+        <span class="word liquid-glass">NATURE</span>
+        <span class="word">HOME</span>
+      </h1>
+      <a href="#products" class="btn-primary">
+        <span>Shop the collection</span>
+        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <p class="hero-caption">Handpicked plants, delivered with care. Styled for modern living.</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Lifestyle -->
+  <section id="lifestyle" class="section-lifestyle">
+    <div class="lifestyle-bg">
+      <img src="images/palm.jpg" alt="Modern living room with palm tree">
+      <div class="lifestyle-gradient-left"></div>
+      <div class="lifestyle-gradient-bottom"></div>
+    </div>
+    <div class="lifestyle-content">
+      <h2 class="section-title">
+        <span class="word">A</span>
+        <span class="word">LIVING</span>
+        <span class="word">ROOM,</span>
+        <span class="word liquid-glass">REIMAGINED</span>
+      </h2>
+      <p class="section-subtitle">Statement plants for calm, curated spaces.</p>
+      <a href="#products" class="btn-primary">
+        <span>Explore the lookbook</span>
+        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 3: Products -->
+  <section id="products" class="section-products">
+    <div class="products-vignette"></div>
+    <div class="products-container">
+      <h2 class="section-title products-title">
+        GREENERY FOR EVERY <span class="liquid-glass">CORNER</span>
+      </h2>
+      
+      <div class="products-grid">
+        <!-- Product 1: Eucalyptus -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/eucalyptus.jpg" alt="Eucalyptus">
+            <div class="quick-add">
+              <button class="quick-add-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <span>Quick add</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3>Eucalyptus</h3>
+              <div class="price-toggle">
+                <span class="toggle-label">Make it <span class="toggle-price" data-product="eucalyptus">49</span>$</span>
+                <button class="toggle-btn" data-product="eucalyptus" data-options="4,49,89" data-selected="1">
+                  <span class="toggle-dot"></span>
+                </button>
+              </div>
+            </div>
+            <p class="product-desc">Aromatic silver-dollar leaves</p>
+            <p class="product-price">From $<span class="price-value" data-product="eucalyptus">49</span></p>
+          </div>
+        </div>
+
+        <!-- Product 2: Palm Tree -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/palm.jpg" alt="Palm Tree">
+            <div class="quick-add">
+              <button class="quick-add-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <span>Quick add</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3>Palm Tree</h3>
+              <div class="price-toggle">
+                <span class="toggle-label">Make it <span class="toggle-price" data-product="palm">89</span>$</span>
+                <button class="toggle-btn" data-product="palm" data-options="15,89,149" data-selected="1">
+                  <span class="toggle-dot"></span>
+                </button>
+              </div>
+            </div>
+            <p class="product-desc">Tropical elegance for any space</p>
+            <p class="product-price">From $<span class="price-value" data-product="palm">89</span></p>
+          </div>
+        </div>
+
+        <!-- Product 3: Snake Plant -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/snake-plant.jpg" alt="Snake Plant">
+            <div class="quick-add">
+              <button class="quick-add-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <span>Quick add</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3>Snake Plant</h3>
+              <div class="price-toggle">
+                <span class="toggle-label">Make it <span class="toggle-price" data-product="snake">35</span>$</span>
+                <button class="toggle-btn" data-product="snake" data-options="35,55,85" data-selected="0">
+                  <span class="toggle-dot"></span>
+                </button>
+              </div>
+            </div>
+            <p class="product-desc">Architectural and low-maintenance</p>
+            <p class="product-price">From $<span class="price-value" data-product="snake">35</span></p>
+          </div>
+        </div>
+
+        <!-- Product 4: Money Plant -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/money-plant.jpg" alt="Money Plant">
+            <div class="quick-add">
+              <button class="quick-add-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <span>Quick add</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3>Money Plant</h3>
+              <div class="price-toggle">
+                <span class="toggle-label">Make it <span class="toggle-price" data-product="money">42</span>$</span>
+                <button class="toggle-btn" data-product="money" data-options="42,65,95" data-selected="0">
+                  <span class="toggle-dot"></span>
+                </button>
+              </div>
+            </div>
+            <p class="product-desc">Braided trunk, glossy leaves</p>
+            <p class="product-price">From $<span class="price-value" data-product="money">42</span></p>
+          </div>
+        </div>
+
+        <!-- Product 5: Tomato Plant -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/tomato-plant.jpg" alt="Tomato Plant">
+            <div class="quick-add">
+              <button class="quick-add-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <span>Quick add</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3>Tomato Plant</h3>
+              <div class="price-toggle">
+                <span class="toggle-label">Make it <span class="toggle-price" data-product="tomato">28</span>$</span>
+                <button class="toggle-btn" data-product="tomato" data-options="5,28,45" data-selected="1">
+                  <span class="toggle-dot"></span>
+                </button>
+              </div>
+            </div>
+            <p class="product-desc">Grow your own fresh tomatoes</p>
+            <p class="product-price">From $<span class="price-value" data-product="tomato">28</span></p>
+          </div>
+        </div>
+
+        <!-- Product 6: Monstera -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/eucalyptus.jpg" alt="Monstera">
+            <div class="quick-add">
+              <button class="quick-add-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <span>Quick add</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-header">
+              <h3>Monstera</h3>
+              <div class="price-toggle">
+                <span class="toggle-label">Make it <span class="toggle-price" data-product="monstera">59</span>$</span>
+                <button class="toggle-btn" data-product="monstera" data-options="59,89,129" data-selected="0">
+                  <span class="toggle-dot"></span>
+                </button>
+              </div>
+            </div>
+            <p class="product-desc">Iconic split leaves</p>
+            <p class="product-price">From $<span class="price-value" data-product="monstera">59</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Philosophy -->
+  <section id="philosophy" class="section-philosophy">
+    <div class="philosophy-bg">
+      <img src="images/snake-plant.jpg" alt="Snake plant close-up">
+      <div class="philosophy-gradient-top"></div>
+      <div class="philosophy-gradient-bottom"></div>
+    </div>
+    <div class="philosophy-content">
+      <h2 class="philosophy-title">
+        <span class="line">MINIMAL. MODERN.</span>
+        <span class="line liquid-glass">ALIVE.</span>
+      </h2>
+      <a href="#feature" class="btn-primary">
+        <span>Read our story</span>
+        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 5: Feature -->
+  <section id="feature" class="section-feature">
+    <div class="feature-bg">
+      <img src="images/money-plant.jpg" alt="Money plant in interior">
+      <div class="feature-gradient-left"></div>
+      <div class="feature-gradient-bottom"></div>
+    </div>
+    <div class="feature-content">
+      <h2 class="section-title">
+        <span class="word">CLEAN</span>
+        <span class="word">LINES.</span>
+        <span class="word liquid-glass">LUSH</span>
+        <span class="word">LIFE.</span>
+      </h2>
+      <p class="section-subtitle">Easy-care varieties that thrive indoors.</p>
+      <a href="#sizes" class="btn-primary">
+        <span>See plant care tips</span>
+        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 6: Size Categories -->
+  <section id="sizes" class="section-sizes">
+    <div class="sizes-container">
+      <h2 class="section-title sizes-title">
+        PLANTS THAT FIT YOUR <span class="liquid-glass">SPACE</span>
+      </h2>
+      
+      <div class="size-categories">
+        <!-- Small & Desktop -->
+        <div class="size-card">
+          <div class="size-image">
+            <img src="images/snake-plant.jpg" alt="Small plants">
+          </div>
+          <div class="size-content">
+            <h3>Small & Desktop</h3>
+            <p>Compact beauties for shelves, desks, and windowsills.</p>
+            <a href="#products" class="size-link">
+              <span>Shop small plants</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Medium & Statement -->
+        <div class="size-card reverse">
+          <div class="size-image">
+            <img src="images/eucalyptus.jpg" alt="Medium plants">
+          </div>
+          <div class="size-content">
+            <h3>Medium & Statement</h3>
+            <p>Floor plants that fill corners without overwhelming.</p>
+            <a href="#products" class="size-link">
+              <span>Shop medium plants</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Large & Dramatic -->
+        <div class="size-card">
+          <div class="size-image">
+            <img src="images/palm.jpg" alt="Large plants">
+          </div>
+          <div class="size-content">
+            <h3>Large & Dramatic</h3>
+            <p>Bold silhouettes for high ceilings and open plans.</p>
+            <a href="#products" class="size-link">
+              <span>Shop large plants</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Delivery -->
+  <section id="delivery" class="section-delivery">
+    <div class="delivery-bg">
+      <img src="images/tomato-plant.jpg" alt="Plant packaging and delivery">
+      <div class="delivery-gradient-left"></div>
+      <div class="delivery-gradient-bottom"></div>
+    </div>
+    <div class="delivery-content">
+      <h2 class="section-title">
+        <span class="word">FROM</span>
+        <span class="word">OUR</span>
+        <span class="word liquid-glass">GREENHOUSE</span>
+        <span class="word">TO</span>
+        <span class="word">YOUR</span>
+        <span class="word">HOME</span>
+      </h2>
+      <p class="section-subtitle">Carefully packed, with guidance to help them thrive.</p>
+      <a href="#contact" class="btn-primary">
+        <span>See how we deliver</span>
+        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 8: Contact -->
+  <section id="contact" class="section-contact">
+    <div class="contact-bg">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <div class="contact-container">
+      <div class="contact-grid">
+        <!-- Left Column -->
+        <div class="contact-info">
+          <h2 class="section-title contact-title">
+            READY TO <span class="liquid-glass">GROW?</span>
+          </h2>
+          <p class="contact-desc">Ask us about sizing, care, or styling. We reply within one business day.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <path d="M22 6l-10 7L2 6"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">XXXX</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">XXXX</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Hours</p>
+                <p class="contact-value">XXXX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Form -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn-accent">
+            <span>Send message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="#" class="footer-logo">
+          <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+            <path d="M12 6v12M8 10c0-2 2-4 4-4s4 2 4 4"/>
+          </svg>
+          <span>Bold Growth</span>
+        </a>
+        
+        <nav class="footer-links">
+          <a href="#products">Shop</a>
+          <a href="#lifestyle">Lookbook</a>
+          <a href="#feature">Plant Care</a>
+          <a href="#delivery">Shipping</a>
+          <a href="#">Privacy</a>
+        </nav>
+        
+        <p class="footer-copy">© 2026 Bold Growth. All rights reserved.</p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
